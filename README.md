@@ -1,4 +1,4 @@
-# time_series_user_classification
+# time-series-user-classification
 
 
 Example ML Project for Time Series Classification, trying to do User Identification based on x,y,z walking sensors.
