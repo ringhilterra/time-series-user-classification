@@ -5,6 +5,9 @@ Example ML Project for Time Series Classification, trying to do User Identificat
 
 **Dataset:** https://archive.ics.uci.edu/ml/datasets/User+Identification+From+Walking+Activity#
 
+<img src="resources/data_view.png" width="600" height="300">
+
+22 different users (classes), can see some class imbalance. Around ~150 total raw sensor samples.
 
 ## Notebooks
 
@@ -23,6 +26,11 @@ Example ML Project for Time Series Classification, trying to do User Identificat
 
 
 ## Results
+Showing random forest classification results for different size windowing / lag features on dataset.
+<img src="resources/rforest_eval_results_windows.png" width="600" height="300">
+
+Increasing the window size shows decreasing performance gain, not getting higher than ~60% test accuracy
+
 
 
 ## Resources on sktime, ROCKET
