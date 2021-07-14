@@ -17,6 +17,7 @@ Example ML Project for Time Series Classification, trying to do User Identificat
 - Exploratory Data Analysis
 - Multiclass Classification with Scikit-Learn
 - Evaluation Metrics and Plots
+- GridSearchCV Example
 
 `full_classify_workflow_rforest_1vsrest.ipynb`
 - copy of full_classify_workflow_rforest.ipynb but trying 1 vs all ML classifier
