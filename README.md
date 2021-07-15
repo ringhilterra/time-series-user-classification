@@ -29,10 +29,21 @@ Example ML Project for Time Series Classification - User Identification
 
 
 ## Results
-Showing random forest classification results for different size windowing / lag features on dataset.
-<img src="resources/rforest_eval_results_windows.png" width="600" height="300">
+Random forest classification model was built from using different size windowing / lag features on dataset.
 
-Increasing the window size shows decreasing performance gain, not getting higher than ~60% test accuracy
+
+| Classifier | Test Accuracy  | Balanced Test Accuracy | Weighted Avg. Precision | Weighted Avg. F1 Score |
+| ------------- | ------------- |  ------------- | ------------- | ------------- |
+| RF Window 2  | 0.39 | 0.37 | 0.37 | 0.37 |
+| RF Window 5  | 0.50 | 0.46 | 0.49 | 0.48 |
+| RF Window 10  | 0.56 | 0.51 | 0.55 | 0.54 |
+| RF Window 25  | 0.60 | 0.54 | 0.60 | 0.58 |
+| RF Window 50  | 0.61 | 0.54 | 0.62 | 0.60 |
+| ROCKET Window 100 - step size 5 | **0.70** | **0.61** | **0.70** | **0.69** |
+
+Increasing the window size shows decreasing performance gain, not getting higher than ~60% test accuracy.
+
+**ROCKET outperforms the Random Forest classifiers signifcantly, using only the raw x,y,z initial 3 features.**
 
 
 
